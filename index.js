@@ -4,6 +4,8 @@ const port = 5000;                  //Save the port number where your server wil
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
+
+app.use(express.static("public"));
 //Idiomatic expression in express to route and respond to a client request
 app.get('/', (req, res) => {        //get requests to the root ("/") will route here
     res.render("home");      //server responds by sending the index.html file to the client's browser
