@@ -1,17 +1,23 @@
-const express = require('express'); //Import the express dependency
-const app = express();              //Instantiate an express app, the main work horse of this server
-const port = 5000;                  //Save the port number where your server will be listening
+const express = require('express');
+const mongoose = require('mongoose');
+import bodyParser from "body-parser";
+const app = express();
+const port = 5000;
+
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((result) => app.listen(PORT), console.log(`App is launched on http://localhost:${PORT}`))
+  .catch((err) => console.log(err));
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.use(express.static("public"));
-//Idiomatic expression in express to route and respond to a client request
-app.get('/', (req, res) => {        //get requests to the root ("/") will route here
-    res.render("home");      //server responds by sending the index.html file to the client's browser
-                                                        //the .sendFile method needs the absolute path to the file, see: https://expressjs.com/en/4x/api.html#res.sendFile 
+
+app.get('/', (req, res) => {
+    
+    res.render("home");
 });
 
-app.listen(port, () => {            //server starts listening for any attempts from a client to connect at port: {port}
+app.listen(port, () => {
     console.log(`Now listening on port ${port}`); 
 });
