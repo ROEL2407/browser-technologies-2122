@@ -12,6 +12,32 @@ a {
 }
 
 /* --- End Styling Reset --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+    background: -webkit-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -webkit-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+    background: -moz-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -moz-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+    background: -ms-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -ms-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+    background: -o-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -o-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+    background-size: cover;
+    background-attachment: fixed
+}
+
+header {
+    padding: 0.5em 0em;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    text-align: center;
+}
+
+form {
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+}
 
 fieldset {
     padding: 1em 0.5em;
@@ -22,8 +48,17 @@ fieldset fieldset {
     border-bottom: 1px solid black;
 }
 
+fieldset fieldset:last-of-type {
+    border-bottom: none;
+}
+
 legend {
     font-size: 1.75em;
+    border-bottom: 1px solid black;
+}
+
+input {
+    margin-top: 0.4em;
 }
 
 label + input, select {
@@ -40,4 +75,22 @@ fieldset input[type="radio"], fieldset input[type="radio"] + label {
 
 fieldset .docent {
     margin-top: 1em;
+}
+
+form button {
+    display: block;
+    width: 7.5em;
+    border-radius: 2em;
+    padding: 0.5em 0em;
+    margin: 0 auto;
+    border: none;
+}
+
+form button:focus {
+    background-color: darkgray;
+    border: lightgray;
+}
+
+input, button {
+    cursor: pointer;
 }
