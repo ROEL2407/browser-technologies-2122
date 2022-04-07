@@ -11,23 +11,21 @@
 
 <body>
     <header>
+        <a href="/" id="back">< terug</a>
         <h1>Minor Web Development</h1>
-        <a href=""></a>
     </header>
     <main>
         <h2>Lijst met ingevulde enquetes</h2>
-        <section>
+        <br />
+        <section id="results">
             <% data.forEach(function(item){ %>
-                <article>
-                    <p><strong>Naam: <%- item.studentName %></strong></p>
-                    <p>ID: <%- item.studentID %></p>
-                    <p>WAFS</p>
-                    <p>Gevolgde weken: <%- item.WAFSweken %></p>
-                    <p>Docent: <%- item.WAFSdocent %></p>
-                    <p>Cijfer lesstof: <%- item.WAFSlesstof %></p>
-                    <p>Cijfer uitleg: <%- item.WAFSuitleg %></p>
-                    <p>Cijfer eigen inzicht: <%- item.WAFSownSights %></p>
-                </article>
+                <a href="/detail/<%- item._id %>">
+                    <article>
+                        <p class="name"><strong>Naam student: <%- item.studentName %></strong></p>
+                        <p class="studentID">ID student: <%- item.studentID %></p>
+                    </article>
+                </a>
+                <br />
             <% }) %>
         </section>
     </main>
