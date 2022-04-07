@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Web Development enquete</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Minor Web Development</h1>
+        <a href=""></a>
+    </header>
+    <main>
+        <h2>Lijst met ingevulde enquetes</h2>
+        <section>
+            <% data.forEach(function(item){ %>
+                <article>
+                    <p><strong>Naam: <%- item.studentName %></strong></p>
+                    <p>ID: <%- item.studentID %></p>
+                    <p>WAFS</p>
+                    <p>Gevolgde weken: <%- item.WAFSweken %></p>
+                    <p>Docent: <%- item.WAFSdocent %></p>
+                    <p>Cijfer lesstof: <%- item.WAFSlesstof %></p>
+                    <p>Cijfer uitleg: <%- item.WAFSuitleg %></p>
+                    <p>Cijfer eigen inzicht: <%- item.WAFSownSights %></p>
+                </article>
+            <% }) %>
+        </section>
+    </main>
+</body>
+
+</html>

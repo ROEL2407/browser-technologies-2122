@@ -1,12 +1,13 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const Enquete = require('./models/enquete.js');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT;
 
-const dbURL = "mongodb+srv://admin:Roel1911@browser-tech.423rf.mongodb.net/browser-tech?retryWrites=true&w=majority";
+const dbURL = process.env.DBURL;
 
 mongoose.connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(port), console.log(`App is launched on http://localhost:${port}`))
@@ -38,3 +39,17 @@ app.post('/', (req, res) => {
         console.log(err);
       });
   });
+
+  
+app.get('/overzicht', (req, res) => {
+  Enquete.find().sort({ createdAt: -1 })
+  .then((result) => {
+    res.render('overzicht', {
+      title: 'Alle Ingevulde Enquetes',
+      data: result
+    })
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+});
