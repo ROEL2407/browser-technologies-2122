@@ -46,6 +46,14 @@ header a {
     text-decoration: underline;
 }
 
+header h1 + a {
+    float: right;
+}
+
+header div {
+    clear: both;
+}
+
 form {
     padding-left: 0.5em;
     padding-bottom: 1em;
@@ -116,11 +124,7 @@ input, button {
 
 #results p {
     display: inline-block;
-    padding: 0% 10%;
-}
-
-#results .studentID {
-    float: right;
+    padding: 0% 5%;
 }
 
 #detail {
@@ -144,5 +148,8 @@ input, button {
 
     header h1 {
         flex-grow: 2;
+    }
+    header div {
+        display: none;
     }
 }
