@@ -12,15 +12,20 @@ a {
 }
 
 /* --- End Styling Reset --- */
+@supports (background: linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%)) {
+    body {
+        background: linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+        background: -webkit-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -webkit-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+        background: -moz-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -moz-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+        background: -ms-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -ms-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+        background: -o-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -o-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
+        background-size: cover;
+        background-attachment: fixed
+    }
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
-    background: -webkit-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -webkit-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
-    background: -moz-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -moz-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
-    background: -ms-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -ms-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
-    background: -o-linear-gradient(10deg, #E9590E 24%, rgba(0,0,0,0) 24%), -o-linear-gradient(21deg, #3AAA34 46%, #34A8E0 46%);
-    background-size: cover;
-    background-attachment: fixed
+    background-color: #34A8E0;
 }
 
 header {
