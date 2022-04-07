@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    padding: 0.5em 0em;
+    padding: 0.5em 2em;
     background-color: rgba(0,0,0,0.5);
     color: white;
     margin-bottom: 1em;
@@ -37,6 +37,13 @@ header {
 
 header h1 {
     text-align: center;
+}
+
+header a {
+    color: white;
+    float: left;
+    margin: 0.5em 0em;
+    text-decoration: underline;
 }
 
 form {
@@ -98,4 +105,44 @@ form button:focus {
 
 input, button {
     cursor: pointer;
+}
+
+#results a {
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 1em 0em;
+}
+
+#results p {
+    display: inline-block;
+    padding: 0% 10%;
+}
+
+#results .studentID {
+    float: right;
+}
+
+#detail {
+    padding: 1em 0em 1em 1em;
+    margin: 0em 1em 1em;
+    background-color: white;
+}
+
+@supports(display:flex) {
+    #results a article {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        flex-grow: 2;
+    }
 }
