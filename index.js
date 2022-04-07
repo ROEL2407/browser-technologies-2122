@@ -40,7 +40,7 @@ app.post('/', (req, res) => {
       });
   });
 
-  
+// overzichtspagina voor ingevulde enquetes
 app.get('/overzicht', (req, res) => {
   Enquete.find().sort({ createdAt: -1 })
   .then((result) => {
@@ -52,4 +52,15 @@ app.get('/overzicht', (req, res) => {
   .catch((err) => {
     console.log(err);
   });
+});
+//detail pagina voor ingevulde enquete
+app.get("/detail/:id", function (req, res) {
+  const id = req.params.id;
+  Enquete.findById(id)
+    .then(result => {
+      res.render('details', { result: result, title: 'Enquete details' });
+    })
+    .catch(err => {
+      console.log(err);
+    });
 });
