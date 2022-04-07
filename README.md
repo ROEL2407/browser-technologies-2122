@@ -30,9 +30,7 @@ Een online demo kunt u [hier](https://browser-technologies-roel.herokuapp.com/) 
 ### Testverslag
 
 #### Enquete invullen
-Bij deze feature heb ik getest of de errors opkomen als je de input velden foutief gebruikt of niet invult / gebruikt. Hierbij heb ik geen fouten gevonden in alle 5 de browsers en weet ik dus dat alles werkt. Alle browsers ondersteunen dus deze feature.
-
-Javascript uitzetten werkt hier ook bij.
+Bij deze feature heb ik getest of de errors opkomen als je de input velden foutief gebruikt of niet invult / gebruikt. Hierbij heb ik geen fouten gevonden in alle 5 de browsers en weet ik dus dat alles werkt. Alle browsers ondersteunen dus deze feature. Javascript uitzetten werkt hier ook bij. Het enige dat veranderd wordt in deze zaak is de verzendknop op de Iphone. Deze veranderd alleen namelijk van kleur.
 
 #### Ingevulde enquetes inzien
 Bij deze feature heb ik gekeken of als ik naar de overzichtspagina en de detail pagina nog steeds informatie geven. Alle browsers en zonder gebruik van JavaScript geven nog steeds data op de pagina's. Alle browsers ondersteunen dus deze feature.
@@ -41,6 +39,8 @@ Bij deze feature heb ik gekeken of als ik naar de overzichtspagina en de detail 
 Bij deze feature heb ik getest of 1 van iedere soort input opgeslagen blijft als je refreshed. Hier kwam ik erachter dat dit niet werkte bij de Nokia. Omdat dit niet in mijn ogen een basis functionaliteit is en het nog werkt ook zonder de voortgang op te slaan, heb ik besloten om dit niet te fixen voor de oudere mobieltjes zoals de Nokia. Dit werkte ook niet op de Iphone en de Switch. De Switch is een geval apart omdat daar de pgina niet gerefreshed kan worden of dat er nog een extra tab bijgemaakt kan worden. Hierdoor heb ik geprobeerd om de pagina terug te herladen en vervolgens weer op dezelfde link te klikken, maar zonder resultaat.
 
 Deze functie werkte wel op Chrome en Firefox.
+
+Zonder Client side JavaScript kan ik niet opslaan wat de gebruiker heeft ingevuld voordat hij/zij weggaat. Daarom werkt dit ook niet zonder JavaScript.
 
 ## Commits
 In deze repo commit ik mijn werk. Om dit meer visueel voor mijzelf te maken geef ik kleine headers mee aan de commit om te laten zien wat ik doe:
