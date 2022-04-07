@@ -11,7 +11,7 @@ const enqueteSchema = new Schema({
 
 
   WAFSweken: {
-    type: Number
+    type: String
   },
   WAFSdocent: {
     type: String
@@ -28,7 +28,7 @@ const enqueteSchema = new Schema({
 
 
   CSSweken: {
-    type: Number
+    type: String
   },
   CSSdocent: {
     type: String
@@ -45,7 +45,7 @@ const enqueteSchema = new Schema({
 
 
   PWAweken: {
-    type: Number
+    type: String,
   },
   PWAdocent: {
     type: String
@@ -62,7 +62,7 @@ const enqueteSchema = new Schema({
 
 
   BTweken: {
-    type: Number
+    type: String
   },
   BTdocent: {
     type: String
@@ -79,7 +79,7 @@ const enqueteSchema = new Schema({
 
 
   RWweken: {
-    type: Number
+    type: String
   },
   RWdocent: {
     type: String
@@ -96,7 +96,7 @@ const enqueteSchema = new Schema({
 
 
   HCDweken: {
-    type: Number
+    type: String
   },
   HCDdocent: {
     type: String
