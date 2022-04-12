@@ -13,7 +13,7 @@
 Een online demo kunt u [hier](https://browser-technologies-roel.herokuapp.com/) vinden.
 
 ### Wireflow
-<img src="https://github.com/ROEL2407/browser-technologies-2122/blob/main/readme_img/wireflow.jpg">
+<img src="https://github.com/ROEL2407/browser-technologies-2122/blob/main/readme_img/wireflow.jpg?raw=true">
 
 ### Features
 - Enquete invullen (basis functionaliteit)
